@@ -6,26 +6,26 @@ import (
 	"time"
 )
 
-func log(msg ...any) {
+func Log(msg ...any) {
 	fmt.Println(color.Ize(color.White, time.Now().Format(time.RFC3339)), "[LOG]", msg)
 }
 
-func info(msg ...any) {
+func Info(msg ...any) {
 	fmt.Println(color.Ize(color.White, time.Now().Format(time.RFC3339)), "[INFO]", msg)
 }
 
-func debug(msg ...any) {
+func Debug(msg ...any) {
 	fmt.Println(color.Ize(color.White, time.Now().Format(time.RFC3339)), color.Ize(color.Gray, "[DEBUG]"), msg)
 }
 
-func success(msg ...any) {
+func Success(msg ...any) {
 	fmt.Println(color.Ize(color.White, time.Now().Format(time.RFC3339)), color.Ize(color.Green, "[SUCCESS]"), msg)
 }
 
-func warning(msg ...any) {
+func Warning(msg ...any) {
 	fmt.Println(color.Ize(color.White, time.Now().Format(time.RFC3339)), color.Ize(color.Yellow, "[WARNING]"), msg)
 }
 
-func error(msg ...any) {
+func Error(msg ...any) {
 	fmt.Println(color.Ize(color.White, time.Now().Format(time.RFC3339)), color.Ize(color.Red, "[ERROR]"), msg)
 }
